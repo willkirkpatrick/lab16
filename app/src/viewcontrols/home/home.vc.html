@@ -1,0 +1,8 @@
+<h1>Will's Blog</h1>
+<div id="container">
+    <plat-link plat-options="{view: newPost}"><plat-button>Create New Post</plat-button></plat-link>
+
+    <plat-foreach class="bloglist" plat-context="blogs">
+        <p id="allPosts"><button plat-tap="readIt()">READ</button>Title: {{title}} Author {{author}} Date: {{createdAt}}</p>
+    </plat-foreach>
+</div>
